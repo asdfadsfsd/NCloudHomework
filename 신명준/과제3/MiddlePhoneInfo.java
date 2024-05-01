@@ -15,7 +15,7 @@ public class MiddlePhoneInfo {
 
 	public void printAllPhoneInfo() {
 	    //배열에 저장된 모든 이름과 번호를 순서대로 출력하는 기능 구현 
-		for(int i =0; i< names.length; i++)
+		for(int i =0; i< index; i++)
 			System.out.println(names[i] +" "+phoneNums[i]);
 	}
 
