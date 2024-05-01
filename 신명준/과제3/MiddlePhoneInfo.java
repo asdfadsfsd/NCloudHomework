@@ -21,6 +21,9 @@ public class MiddlePhoneInfo {
 
 	public void printPhoneInfo(int index) {
 	    //매개변수로 전달된 인덱스에 해당하는 이름과 번호 출력하는 기능 구현
-		System.out.println(names[index] +" "+phoneNums[index]);
+		if(this.index >index)
+		{
+		  System.out.println(names[index] +" "+phoneNums[index]);
+		}
 	}
 }

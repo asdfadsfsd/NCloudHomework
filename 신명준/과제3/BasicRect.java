@@ -4,7 +4,7 @@ public class BasicRect {
 	public int width ;
 	public int height;
 	
-	BasicRect()
+	public BasicRect()
 	{
 		
 	}
@@ -14,6 +14,14 @@ public class BasicRect {
 		this.height = height;
 	}
 	
+	public int getArea()
+	{
+		return width*height;
+	}
 	
+	public int getRound()
+	{
+		return 2*(width+height);
+	}
 	
 }

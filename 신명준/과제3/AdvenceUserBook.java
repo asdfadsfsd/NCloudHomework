@@ -10,7 +10,7 @@ public class AdvenceUserBook {
 	   
 	   BasicUser user = new BasicUser();
 	   user.setPassword(password);
-	   user.setPassword(password);
+	   user.setUsername(username);
 	   user.setId(index+1);
 	   Users[index] =user;
 	   index++;

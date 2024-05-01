@@ -5,7 +5,7 @@ public class BasicSmatPhone {
     public int user;
     public int network;
     
-    BasicSmatPhone()
+    public BasicSmatPhone()
     {
     
     }
