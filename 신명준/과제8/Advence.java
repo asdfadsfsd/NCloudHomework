@@ -12,6 +12,7 @@ public class Advence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	
 		//01
 		 Calendar ltd1 =  Calendar.getInstance();
 		 ltd1.set(2001,12, 19);
@@ -59,25 +60,31 @@ public class Advence {
 			max = Math.max(max, arr.get(i) + arr.get(i+1));
 	  	 }
 		 System.out.println(max);
-		 
+		
 		 //4
 		 List<Integer> arr2 = new ArrayList<>();
 		 List<Integer> checker  = new ArrayList<>();
-		 arr2.add(23);
-		 arr2.add(34);
-		 arr2.add(45);
-		 arr2.add(87);
-		 arr2.add(21);
-		 for (int i = 0; i < arr.size(); i++) {
-			 for (int j = 0; j < arr.size(); j++) {
+		 List<Integer> checker2  = new ArrayList<>();
+		 arr2.add(1);
+		 arr2.add(2);
+		 arr2.add(3);
+		 arr2.add(4);
+		 arr2.add(5);
+		 arr2.add(6);
+		 for (int i = 0; i < arr2.size(); i++) {
+			 for (int j = i+1; j < arr2.size(); j++) {
 					if(i != j)
 					{
-						if(checker.indexOf(arr2.get(i) + arr2.get(j)) == -1)
-							checker.add(arr.get(i) + arr2.get(j));
-						
-					}
+						int value = arr2.get(i) + arr2.get(j);
+						int wh = checker.indexOf(value);
+						if(wh == -1)
+							checker.add(value);
+						else
+							checker2.add(value);
+					} 
 			 }
 		 }
+		 checker.removeAll(checker2);
 		 System.out.println(checker.size());
 		 
 		 

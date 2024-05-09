@@ -16,15 +16,19 @@ public class Middle {
 		Scanner sc = new Scanner(System.in);
 		String str = sc.nextLine();
 		SimpleDateFormat fd = new SimpleDateFormat("yyyy-MM-dd");
-		
 		try
 		{
-			
+			 Calendar ltd =  Calendar.getInstance();
+			 ltd.setTime(fd.parse(str));
+			 ltd.add(ltd.DATE, 3);
+             System.out.println(fd.format(ltd.getTime()));
+			 
 			System.out.println(fd.parse(str));
 		}catch(Exception e)
 		{
-			
+			System.out.println(e);
 		}
+		
 		//2
 		String[] date = {"","일","월","화","수","목","금","토"};
 		String str2 = sc.nextLine();
@@ -47,7 +51,7 @@ public class Middle {
 			 Calendar ltd1 =  Calendar.getInstance();
 			 ltd1.set(2023,03,1, 20,31,45);
 			 Calendar ltd2 =  Calendar.getInstance();
-			 ltd2.set(2021,07,8, 11,58,04);
+			 ltd2.set(2021,07,8, 11,5804);
 			 
 			 long timeGap = ltd1.getTimeInMillis() - ltd2.getTimeInMillis();
 			 System.out.println(timeGap);
