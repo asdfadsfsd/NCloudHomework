@@ -12,6 +12,7 @@ public class Advance {
 		 *  ex) aabbcdeffaaaaynguuuuuu -> abcdefayngu
 		 */
 		
+
 		Scanner sc = new Scanner(System.in);
 		
 		String us = new String();
